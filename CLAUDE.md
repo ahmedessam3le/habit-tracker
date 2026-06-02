@@ -40,4 +40,15 @@ All state lives in a single React Context (`src/context/HabitContext.tsx`). The 
 
 ## Git workflow
 
-Commit every meaningful change with a conventional prefix (`feat:`, `fix:`, `refactor:`) and push immediately. Remote: `https://github.com/ahmedessam3le/habit-tracker` (branch: `master`).
+**After every meaningful change, commit and push immediately.** This keeps GitHub as a live backup so any version can be rolled back to at any time.
+
+- Remote: `https://github.com/ahmedessam3le/habit-tracker` (branch: `master`)
+- Use conventional commit prefixes: `feat:`, `fix:`, `refactor:`, `docs:`, `chore:`
+- One logical change per commit — don't batch unrelated edits together
+- Always `git push` right after `git commit`, never leave commits only local
+
+```bash
+git add <files>
+git commit -m "feat: description of what changed and why"
+git push
+```
